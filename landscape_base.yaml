@@ -70,6 +70,9 @@ clusters:
   worker:
     # Properties for worker nodes
     <<: (( merge ))
+  bastion:
+    # Properties for bastion host
+    <<: (( merge ))
 
 etcd:
   # namespace to use for etcd deployment (only relevant if etcd component is deployed)
