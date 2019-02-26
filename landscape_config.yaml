@@ -116,6 +116,7 @@ misc:
     # use htpasswd to create password entries
     # example here: admin: ********* (htpasswd -bn admin "chosen password")
     dashboard_creds: "<credentials here>" # kubify only
+    dns_nameservers: ["<dns_nameservers_list>"]
   variant_openstack:
     os_fip_pool_name: "<floating ip pool name>"
 
@@ -198,6 +199,9 @@ seed_config:
     - <zone1>
     - <zone2>
     - <...>
+    dns_nameservers:
+    - <ns_1>
+    - <ns_2>
   variant_az:
     region: *az_region
     # CoreOS stable version number

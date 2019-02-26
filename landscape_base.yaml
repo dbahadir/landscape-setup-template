@@ -99,6 +99,7 @@ misc:
     # use htpasswd to create password entries
     # example here: admin: ********* (htpasswd -bn admin "chosen password")
     dashboard_creds: "(( merge ))"
+    dns_nameservers: (( merge ))
     # you should not change anything in this section below except for the
     # password
     deploy_tiller: "false"
